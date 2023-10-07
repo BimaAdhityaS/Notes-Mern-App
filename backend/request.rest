@@ -1,0 +1,27 @@
+GET http://localhost:5000/api/notes
+
+###
+GET http://localhost:5000/api/notes/1
+
+###
+POST http://localhost:5000/api/notes
+Content-Type: application/json
+
+{
+  "title": "Note 2",
+  "author": "Bima",
+  "note": "Gak jadi bakar"
+}
+
+###
+patch http://localhost:5000/api/notes/1
+Content-Type: application/json
+
+{
+  "title": "note 1",
+  "author": "Bima Adhitya Sukoco",
+  "note": "Gak jadi bakar kampus."
+}
+
+###
+DELETE http://localhost:5000/api/notes/2
